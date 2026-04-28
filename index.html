@@ -130,3 +130,118 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renault Kenitra | Digital Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #000; color: white; overflow-x: hidden; }
+        .font-brand { font-family: 'Syncopate', sans-serif; }
+        
+        /* واجهة الفيديو الاحترافية */
+        .video-docker video {
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%; min-height: 100%;
+            width: auto; height: auto;
+            position: absolute; z-index: -1;
+            object-fit: cover;
+        }
+        .video-overlay {
+            background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.8) 100%);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.07);
+            border-color: #ffcc00;
+            transform: translateY(-10px);
+        }
+
+        .gold-glow { text-shadow: 0 0 15px rgba(255, 204, 0, 0.5); }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-[100] px-8 py-6 flex justify-between items-center bg-black/40 backdrop-blur-md border-b border-white/5">
+        <div class="flex items-center gap-3">
+            <div class="w-6 h-8 bg-[#ffcc00] shadow-[0_0_20px_#ffcc00]" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);"></div>
+            <span class="text-xl font-brand tracking-tighter text-white">RENAULT <span class="text-[#ffcc00]">KENITRA</span></span>
+        </div>
+        <div class="hidden md:flex gap-12 text-[10px] font-bold uppercase tracking-[0.4em]">
+            <a href="#showroom" class="hover:text-[#ffcc00] transition">Collection</a>
+            <a href="#details" class="hover:text-[#ffcc00] transition">Agence</a>
+        </div>
+        <a href="tel:0775127765" class="border border-[#ffcc00] text-[#ffcc00] px-6 py-2 rounded-full text-[10px] font-bold tracking-widest hover:bg-[#ffcc00] hover:text-black transition">CONTACT</a>
+    </nav>
+
+    <section class="relative h-screen flex items-center justify-center overflow-hidden video-docker">
+        <video autoplay muted loop playsinline>
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-fast-red-car-driving-on-the-highway-34534-large.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 video-overlay"></div>
+        
+        <div class="relative z-10 text-center px-4 animate__animated animate__fadeIn">
+            <h1 class="text-4xl md:text-[85px] font-brand font-bold leading-none mb-6 gold-glow">
+                BIENVENU CHEZ <br> <span class="text-[#ffcc00] italic">RENAULT</span>
+            </h1>
+            <div class="w-24 h-1 bg-[#ffcc00] mx-auto mb-8"></div>
+            <p class="text-sm md:text-base tracking-[0.5em] uppercase font-light mb-12 opacity-80">Design. Technologie. Passion.</p>
+            <a href="#showroom" class="inline-block bg-white text-black px-12 py-4 font-black text-xs tracking-widest uppercase hover:bg-[#ffcc00] transition shadow-[0_0_30px_rgba(255,255,255,0.2)]">Explorer la collection</a>
+        </div>
+    </section>
+
+    <section id="showroom" class="py-32 px-6 max-w-7xl mx-auto">
+        <div class="mb-24 space-y-4">
+            <h2 class="text-3xl font-brand italic text-[#ffcc00]">NOS MODÈLES</h2>
+            <p class="text-gray-500 text-xs tracking-[0.3em] uppercase">L'excellence de la gamme Renault à Kenitra</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div class="glass-card rounded-[40px] p-8">
+                <img src="https://images.unsplash.com/photo-1555626906-fcf10d6852b5?q=80&w=600" class="w-full h-48 object-cover rounded-3xl mb-8 grayscale hover:grayscale-0 transition duration-700">
+                <h3 class="text-xl font-bold mb-3 italic">Renault Clio V</h3>
+                <p class="text-gray-500 text-xs leading-relaxed mb-8 font-medium italic">Citadine emblématique, parfaite pour la ville de Kenitra. Style audacieux et connectivité avancée.</p>
+                <div class="w-full h-px bg-white/10 mb-6"></div>
+                <p class="text-[#ffcc00] text-[10px] font-bold tracking-widest uppercase">Élégance Urbaine</p>
+            </div>
+
+            <div class="glass-card rounded-[40px] p-8 border-[#ffcc00]/30 shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1619103433930-b9952b9b2505?q=80&w=600" class="w-full h-48 object-cover rounded-3xl mb-8">
+                <h3 class="text-xl font-bold mb-3 italic text-[#ffcc00]">Megane E-Tech</h3>
+                <p class="text-gray-500 text-xs leading-relaxed mb-8 font-medium italic">Le futur est électrique. Un concentré de technologie avec 450km d'autonomie et un design de coupé.</p>
+                <div class="w-full h-px bg-white/10 mb-6"></div>
+                <p class="text-white text-[10px] font-bold tracking-widest uppercase">100% Électrique</p>
+            </div>
+
+            <div class="glass-card rounded-[40px] p-8">
+                <img src="https://images.unsplash.com/photo-1669023414166-a4ce7c0feae1?q=80&w=600" class="w-full h-48 object-cover rounded-3xl mb-8 grayscale hover:grayscale-0 transition duration-700">
+                <h3 class="text-xl font-bold mb-3 italic">Renault Captur</h3>
+                <p class="text-gray-500 text-xs leading-relaxed mb-8 font-medium italic">SUV compact polyvalent. Un confort exceptionnel et une technologie hybride E-Tech ultra performante.</p>
+                <div class="w-full h-px bg-white/10 mb-6"></div>
+                <p class="text-[#ffcc00] text-[10px] font-bold tracking-widest uppercase">Aventure Urbaine</p>
+            </div>
+
+            <div class="glass-card rounded-[40px] p-8">
+                <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=600" class="w-full h-48 object-cover rounded-3xl mb-8 grayscale hover:grayscale-0 transition duration-700">
+                <h3 class="text-xl font-bold mb-3 italic">Renault Arkana</h3>
+                <p class="text-gray-500 text-xs leading-relaxed mb-8 font-medium italic">Le premier SUV Coupé hybride. Une silhouette sportive qui allie agilité et robustesse.</p>
+                <div class="w-full h-px bg-white/10 mb-6"></div>
+                <p class="text-[#ffcc00] text-[10px] font-bold tracking-widest uppercase">Style Sportif</p>
+            </div>
+
+            <div class="glass-card rounded-[40px] p-8">
+                <img src="https://images.unsplash.com/photo-1594535182308-8ffefbb661e1?q=80&w=600" class="w-full h-48 object-cover rounded-3xl mb-8 grayscale hover:grayscale-0 transition duration-700">
+                <h3 class="text-xl font-bold mb-3 italic text-[#ffcc00]">Renault Austral</h3>
+                <p class="text-gray-500 text-xs leading-relaxed mb-8 font-medium italic">Le nouveau SUV high-tech. Expérience digitale inédite avec Google intégré et confort premium.</p>
