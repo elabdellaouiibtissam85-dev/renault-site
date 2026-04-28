@@ -3,152 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renault Maroc | Kenitra Luxury Agency</title>
+    <title>Renault Kenitra - Officiel</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Inter:wght@300;600;900&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Montserrat', sans-serif; background-color: #000; }
-        .bg-gold { background-color: #ffcc00; }
-        .text-gold { color: #ffcc00; }
-        .border-gold { border-color: #ffcc00; }
-        .car-card:hover img { transform: scale(1.1); transition: 0.5s; }
-        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); }
+        body { font-family: 'Inter', sans-serif; background-color: #000; }
+        .font-brand { font-family: 'Syncopate', sans-serif; }
+        .glass { background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(15px); }
+        /* هاد الكود هو لي كيدير تأثير الحركة في الخلفية */
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1619103433930-b9952b9b2505?q=80&w=2070');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     </style>
 </head>
 <body class="text-white overflow-x-hidden">
 
-    <nav class="fixed w-full z-[100] px-6 py-4 glass border-b border-white/10 flex justify-between items-center transition-all duration-500">
-        <div class="flex items-center gap-2">
-            <div class="w-6 h-8 bg-gold rounded-sm shadow-[0_0_15px_#ffcc00]" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);"></div>
-            <span class="text-2xl font-black tracking-tighter italic">RENAULT <span class="text-gold font-light not-italic text-sm">KENITRA</span></span>
+    <nav class="fixed w-full z-[100] px-10 py-5 glass border-b border-white/10 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <div class="w-6 h-8 bg-[#ffcc00] shadow-[0_0_20px_#ffcc00]" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);"></div>
+            <span class="text-2xl font-black font-brand tracking-tighter italic text-[#ffcc00]">RENAULT</span>
         </div>
-        <div class="hidden lg:flex gap-8 text-[11px] font-bold uppercase tracking-[0.3em]">
-            <a href="#models" class="hover:text-gold transition">Modèles</a>
-            <a href="#innovation" class="hover:text-gold transition">Innovation</a>
-            <a href="#contact" class="hover:text-gold transition">Contact</a>
+        <div class="hidden lg:flex gap-10 text-[10px] font-bold uppercase tracking-[0.4em]">
+            <a href="#models" class="hover:text-[#ffcc00] transition">Showroom</a>
+            <a href="#contact" class="hover:text-[#ffcc00] transition">Contact</a>
         </div>
-        <a href="tel:0775127765" class="bg-gold text-black px-6 py-2 rounded-full font-black text-[10px] tracking-widest hover:bg-white transition shadow-lg">RÉSERVER UN ESSAI</a>
+        <button class="bg-[#ffcc00] text-black px-8 py-2 rounded-full font-black text-[10px] tracking-widest hover:bg-white transition shadow-lg">KENITRA AGY</button>
     </nav>
 
-    <section class="relative h-screen flex items-center justify-center text-center px-4 overflow-hidden">
-        <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover opacity-60">
-            <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
-        </video>
-        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
-        <div class="relative z-10 animate__animated animate__fadeInUp">
-            <span class="text-gold font-bold tracking-[0.5em] text-xs uppercase mb-4 block">Bienvenue chez Renault Kenitra</span>
-            <h1 class="text-6xl md:text-[100px] font-black leading-none mb-6 italic uppercase">La Nouvelle <br><span class="text-gold">Génération</span></h1>
-            <p class="text-lg md:text-xl font-light text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">Vivez l'excellence technologique et le design futuriste à travers notre gamme 100% connectée.</p>
-            <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="#models" class="bg-white text-black px-10 py-4 font-black text-xs tracking-widest uppercase hover:bg-gold transition rounded-sm">Explorer les Modèles</a>
-                <a href="#contact" class="border border-white/30 text-white px-10 py-4 font-black text-xs tracking-widest uppercase hover:bg-white/10 transition rounded-sm">Nous contacter</a>
+    <section class="relative h-screen flex items-center justify-center text-center px-4 overflow-hidden hero-bg">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-black"></div>
+        
+        <div class="relative z-10 animate__animated animate__fadeIn">
+            <div class="w-20 h-1 bg-[#ffcc00] mx-auto mb-8 shadow-[0_0_15px_#ffcc00]"></div>
+            <h1 class="text-5xl md:text-[80px] font-brand font-bold leading-none mb-6 uppercase tracking-tighter">
+                BIENVENU CHEZ <br> <span class="text-[#ffcc00] italic">RENAULT</span>
+            </h1>
+            <p class="text-lg md:text-xl font-light text-gray-300 max-w-2xl mx-auto mb-10 tracking-[0.2em] uppercase">
+                L'excellence automobile au cœur de Kenitra.
+            </p>
+            <div class="flex flex-col md:flex-row gap-6 justify-center">
+                <a href="#models" class="bg-white text-black px-12 py-5 font-black text-xs tracking-widest uppercase hover:bg-[#ffcc00] transition shadow-2xl">VOIR LES MODÈLES</a>
+                <a href="tel:0775127765" class="border border-white/40 text-white px-12 py-5 font-black text-xs tracking-widest uppercase hover:bg-white/10 transition">APPELER MAINTENANT</a>
             </div>
         </div>
     </section>
 
     <section id="models" class="py-32 px-6 max-w-7xl mx-auto">
-        <div class="mb-20">
-            <h2 class="text-4xl font-black italic uppercase tracking-tighter mb-2">Le Showroom <span class="text-gold">Prestige</span></h2>
-            <div class="w-20 h-1 bg-gold"></div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="car-card group bg-zinc-900/50 rounded-3xl overflow-hidden border border-white/5 hover:border-gold/50 transition duration-500 shadow-2xl">
-                <div class="overflow-hidden h-64">
-                    <img src="https://images.unsplash.com/photo-1555626906-fcf10d6852b5?q=80&w=1000" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-                </div>
+        <h2 class="text-3xl font-brand font-bold italic mb-16 border-l-4 border-[#ffcc00] pl-6 uppercase">Nos Modèles <span class="text-gray-500 font-light">Disponibles</span></h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div class="group relative overflow-hidden rounded-2xl bg-zinc-900 border border-white/5 hover:border-[#ffcc00]/50 transition duration-500">
+                <img src="https://images.unsplash.com/photo-1555626906-fcf10d6852b5?q=80&w=1000" class="w-full h-64 object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition duration-700">
                 <div class="p-8">
-                    <div class="flex justify-between items-center mb-4">
-                        <h3 class="text-2xl font-bold italic">Clio V</h3>
-                        <span class="text-gold text-xs font-bold px-3 py-1 border border-gold rounded-full">Best-Seller</span>
-                    </div>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">L'élégance urbaine redéfinie. Une technologie de pointe pour chaque kilomètre à Kenitra.</p>
-                    <button class="w-full py-4 border border-white/10 text-[10px] font-bold tracking-widest uppercase hover:bg-gold hover:text-black transition duration-300">Détails du véhicule</button>
-                </div>
-            </div>
-
-            <div class="car-card group bg-zinc-900/50 rounded-3xl overflow-hidden border border-white/5 hover:border-gold/50 transition duration-500 shadow-2xl">
-                <div class="overflow-hidden h-64">
-                    <img src="https://images.unsplash.com/photo-1619103433930-b9952b9b2505?q=80&w=1000" class="w-full h-full object-cover">
-                </div>
-                <div class="p-8">
-                    <div class="flex justify-between items-center mb-4 text-gold">
-                        <h3 class="text-2xl font-bold italic text-white">Megane E-Tech</h3>
-                        <span class="text-xs font-bold px-3 py-1 border border-gold rounded-full bg-gold text-black">100% Électrique</span>
-                    </div>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Zéro émission, un plaisir de conduite absolu et un design révolutionnaire.</p>
-                    <button class="w-full py-4 border border-white/10 text-[10px] font-bold tracking-widest uppercase hover:bg-gold hover:text-black transition">Détails du véhicule</button>
-                </div>
-            </div>
-
-            <div class="car-card group bg-zinc-900/50 rounded-3xl overflow-hidden border border-white/5 hover:border-gold/50 transition duration-500 shadow-2xl">
-                <div class="overflow-hidden h-64">
-                    <img src="https://images.unsplash.com/photo-1669023414166-a4ce7c0feae1?q=80&w=1000" class="w-full h-full object-cover">
-                </div>
-                <div class="p-8">
-                    <h3 class="text-2xl font-bold italic mb-4">Captur</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Le SUV polyvalent qui s'adapte à votre vie. Confortable, spacieux et puissant.</p>
-                    <button class="w-full py-4 border border-white/10 text-[10px] font-bold tracking-widest uppercase hover:bg-gold hover:text-black transition">Détails du véhicule</button>
-                </div>
-            </div>
-
-            <div class="bg-zinc-900/50 p-8 rounded-3xl border border-white/5 flex flex-col justify-center items-center text-center">
-                <h3 class="text-xl font-bold mb-4 italic uppercase">Arkana Hybrid</h3>
-                <p class="text-gray-500 text-xs mb-6 tracking-widest uppercase">Le futur est ici</p>
-                <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=1000" class="w-full h-32 object-contain grayscale hover:grayscale-0 transition">
-             </div>
-             <div class="bg-zinc-900/50 p-8 rounded-3xl border border-white/5 flex flex-col justify-center items-center text-center">
-                <h3 class="text-xl font-bold mb-4 italic uppercase">Austral SUV</h3>
-                <p class="text-gray-500 text-xs mb-6 tracking-widest uppercase">Technologie embarquée</p>
-                <img src="https://images.unsplash.com/photo-1594535182308-8ffefbb661e1?q=80&w=1000" class="w-full h-32 object-contain grayscale hover:grayscale-0 transition">
-             </div>
-             <div class="bg-gold p-8 rounded-3xl flex flex-col justify-center items-center text-center text-black">
-                <h3 class="text-2xl font-black mb-2 italic">CATALOGUE 2026</h3>
-                <p class="text-xs font-bold mb-6 tracking-widest uppercase opacity-70">Kenitra Edition</p>
-                <button class="bg-black text-white px-8 py-3 rounded-full text-[10px] font-bold tracking-tighter hover:bg-white hover:text-black transition italic">TÉLÉCHARGER LE PDF</button>
-             </div>
-        </div>
-    </section>
-
-    <section id="contact" class="py-32 px-6 bg-zinc-950">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
-            <div class="space-y-12 animate__animated animate__fadeInLeft">
-                <h2 class="text-5xl font-black italic tracking-tighter uppercase leading-none">Contactez <br><span class="text-gold">L'Agence</span></h2>
-                <div class="space-y-8">
-                    <div class="flex items-start gap-6">
-                        <div class="bg-gold p-4 rounded-lg text-black">📍</div>
-                        <div>
-                            <h4 class="text-gold font-bold uppercase tracking-widest text-xs mb-1">Localisation</h4>
-                            <p class="text-gray-300">Boulevard Mohammed V, Kenitra, Maroc</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-6">
-                        <div class="bg-gold p-4 rounded-lg text-black">📞</div>
-                        <div>
-                            <h4 class="text-gold font-bold uppercase tracking-widest text-xs mb-1">Téléphone Direct</h4>
-                            <p class="text-2xl font-bold italic">0775127765</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-6">
-                        <div class="bg-gold p-4 rounded-lg text-black">✉️</div>
-                        <div>
-                            <h4 class="text-gold font-bold uppercase tracking-widest text-xs mb-1">Expert Conseil</h4>
-                            <p class="text-gray-300">elabdellaouiibtissam85@gmail.com</p>
-                        </div>
-                    </div>
+                    <h3 class="text-xl font-bold mb-2 uppercase tracking-widest">Renault Clio</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed">La citadine emblématique pour Kenitra.</p>
                 </div>
             </div>
             
-            <div class="relative glass rounded-3xl p-1 animate__animated animate__fadeInRight">
-                <div class="w-full h-full min-h-[400px] bg-zinc-800 rounded-2xl flex items-center justify-center relative overflow-hidden border border-white/10">
-                    <div class="absolute inset-0 bg-cover opacity-30" style="background-image: url('https://www.map-kenitra.ma/wp-content/uploads/2021/04/kenitra-map.jpg')"></div>
-                    <div class="relative z-10 text-center">
-                        <div class="w-12 h-12 bg-gold rounded-full mx-auto mb-4 animate-ping absolute -top-2 left-1/2 -translate-x-1/2"></div>
-                        <div class="w-12 h-12 bg-gold rounded-full mx-auto relative flex items-center justify-center text-black font-black italic shadow-[0_0_30px_#ffcc00]">R</div>
-                        <p class="mt-4 text-xs font-black tracking-widest uppercase">Agence Kenitra</p>
-                    </div>
+            <div class="group relative overflow-hidden rounded-2xl bg-zinc-900 border border-white/5 hover:border-[#ffcc00]/50 transition duration-500">
+                <img src="https://images.unsplash.com/photo-1619103433930-b9952b9b2505?q=80&w=1000" class="w-full h-64 object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition duration-700">
+                <div class="p-8">
+                    <h3 class="text-xl font-bold mb-2 uppercase tracking-widest text-[#ffcc00]">Megane E-Tech</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed">Le futur électrique est entre vos mains.</p>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-2xl bg-zinc-900 border border-white/5 hover:border-[#ffcc00]/50 transition duration-500">
+                <img src="https://images.unsplash.com/photo-1669023414166-a4ce7c0feae1?q=80&w=1000" class="w-full h-64 object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition duration-700">
+                <div class="p-8">
+                    <h3 class="text-xl font-bold mb-2 uppercase tracking-widest">Renault Captur</h3>
+                    <p class="text-gray-500 text-xs leading-relaxed">Le SUV urbain prêt pour toutes les aventures.</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="contact" class="py-20 px-6 bg-zinc-950 text-center">
+        <div class="max-w-4xl mx-auto border border-white/5 p-16 rounded-[40px] glass">
+            <h2 class="text-3xl font-brand font-bold text-[#ffcc00] mb-12 uppercase italic">Contact Kenitra</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div>
+                    <p class="text-[10px] font-black text-gray-500 uppercase tracking-widest mb-2">📍 Adresse</p>
+                    <p class="text-sm font-bold">Boulevard Mohammed V, Kenitra</p>
+                </div>
+                <div>
+                    <p class="text-[10px] font-black text-gray-500 uppercase tracking-widest mb-2">📞 Téléphone</p>
+                    <p class="text-sm font-bold text-[#ffcc00]">0775127765</p>
+                </div>
+                <div>
+                    <p class="text-[10px] font-black text-gray-500 uppercase tracking-widest mb-2">✉️ Email</p>
+                    <p class="text-[10px] font-bold">elabdellaouiibtissam85@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center">
+        <p class="text-[8px] text-gray-700 tracking-[1em] font-black uppercase mb-4">Design by Ibtissam</p>
+        <p class="text-gray-900 text-[10px] font-brand font-bold opacity-30">RENAULT KENITRA © 2026</p>
+    </footer>
+
+</body>
+</html>
